@@ -14,4 +14,9 @@ du -h --max-depth=1 | sort -hr
 ### Disk Space Issues:
 
 Check ~/.local folder.
-
+### Extend Disk
+```bash
+growpart /dev/sda 1
+resize2fs /dev/sda1
+df -h /dev/sda1
+```
